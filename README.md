@@ -11,43 +11,43 @@ Production-ready API template
 <summary><b>About the "templated" project</b></summary>
 
 <!--ts-->
-
-## Who
-
-> First of all, hello. I'm [LeChatErrant](https://github.com/LeChatErrant), software engineer studying at Epitech Paris, creator and maintainer of [API-template](https://github.com/LeChatErrant/API-template)
->
-> I'm currently working at [Tresorio](https://tresorio.com/), a green cloud-computing startup, at the position of lead-developer of the cloud-rendering branch (distributed computing for 3D animation)
->
-> Passionate by the design of backend software and distributed systems, I'm aiming to offer tools to help building the most complete architecture possible
-
-Don't hesitate to share your improvements or to give me feedback on Discord at LeChatErrant#6074 ;)
-
-## What
-
-The "templated" project is divided into 4 parts :
- - [API-template](https://github.com/LeChatErrant/API-template)
- - back-office-template (coming soon)
- - [devops-template](https://github.com/LeChatErrant/API-template)
- - cli (wip)
-
-## Why
-
-**Starting a whole new project from scratch is painfully.** You have to
- - Choose between multiple technologies
- - Write nasty configurations
- - Adopt a coding style
- - Enforce good practices
- - Setup a lot of tooling
- - Make sure future developers will follows established guidelines, to keep the project maintainable
-
-Those **decisions** are often poorly made at first and lead to multiple refacto, since
- - Your skills evolves along with the project
- - You learn new technologies / ways to achieve something
- - Most of the decisions taken become invalid are the project grows
- - Team changes
-
-That's why I archived every **mistakes I learned from** and every **choices made** in this project. 
-
+   * [API-template](#api-template)
+      * [Who](#who)
+      * [What](#what)
+      * [Why](#why)
+   * [Notes](#notes)
+   * [Table of Contents](#table-of-contents)
+      * [Architecture](#architecture)
+      * [Configuration](#configuration)
+      * [Development](#development)
+      * [Database](#database)
+      * [Production](#production)
+      * [Language](#language)
+      * [ORM](#orm)
+         * [Schema](#schema)
+         * [Generation](#generation)
+         * [Migrations](#migrations)
+      * [Linter](#linter)
+      * [Testing policy](#testing-policy)
+         * [Unit tests](#unit-tests)
+         * [Integration tests](#integration-tests)
+            * [TDD](#tdd)
+      * [Continuous integration](#continuous-integration)
+      * [Automated dependencies updates](#automated-dependencies-updates)
+      * [Logging](#logging)
+      * [Documentation](#documentation)
+         * [Postman](#postman)
+      * [Request validation](#request-validation)
+      * [Error handling](#error-handling)
+         * [RO](#ro)
+         * [Non-OK responses](#non-ok-responses)
+         * [Crashes](#crashes)
+         * [Async handler](#async-handler)
+      * [Route protection](#route-protection)
+         * [Authentification](#authentification)
+         * [Ownership](#ownership)
+         * [Me](#me)
+      * [Contributors](#contributors)
 <!--te-->
 </details>
 
@@ -67,6 +67,9 @@ Table of Contents
 
 <!--ts-->
    * [API-template](#api-template)
+      * [Who](#who)
+      * [What](#what)
+      * [Why](#why)
    * [Notes](#notes)
    * [Table of Contents](#table-of-contents)
       * [Architecture](#architecture)
